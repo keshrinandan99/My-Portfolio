@@ -8,7 +8,6 @@ import OnekoCat from "@/components/OnekoCat"
 import Reach from "@/components/Reach"
 
 import Link from "next/link"
-import Image from "next/image"
 import { projects } from '@/data/projects'
 import { ProjectCard } from '@/components/ProjectCard'
 import localFont from 'next/font/local'

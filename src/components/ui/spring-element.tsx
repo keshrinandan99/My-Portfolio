@@ -53,7 +53,7 @@ const generateSpringPath = (
   const perpX = -uy,
     perpY = ux;
 
-  let path = [];
+  const path = [];
   for (let i = 0; i < coilCount; i++) {
     const sx = x1 + ux * (i * d);
     const sy = y1 + uy * (i * d);
@@ -79,8 +79,12 @@ const generateSpringPath = (
   }
   return path.join(' ');
 };
+interface MotionValue<T = any> {
+  get(): T;
+  on(event: 'change', callback: () => void): () => void;
+}
 
-function useMotionValueValue(mv: any) {
+function useMotionValueValue<T>(mv: MotionValue<T>): T {
   return React.useSyncExternalStore(
     (callback) => {
       const unsub = mv.on('change', callback);
@@ -90,7 +94,6 @@ function useMotionValueValue(mv: any) {
     () => mv.get(),
   );
 }
-
 type SpringElementProps = {
   children: React.ReactElement;
   className?: string;
