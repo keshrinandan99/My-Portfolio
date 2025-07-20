@@ -7,28 +7,28 @@ export default function Reach() {
   const socialLinks: SocialLink[] = [
     {
       name: "twitter/x",
-      url: "https://twitter.com/code_kartik",
+      url: "https://x.com/Hey_KND",
     },
     {
       name: "github",
-      url: "https://github.com/KartikLabhshetwar",
+      url: "https://github.com/keshrinandan99",
     },
-    {
-      name: "linkedin",
-      url: "https://www.linkedin.com/in/kartikcode/",
-    },
-    {
-      name: "peerlist",
-      url: "https://peerlist.io/code_kartik",
-    },
+    // {
+    //   name: "linkedin",
+    //   url: "https://www.linkedin.com/in/kartikcode/",
+    // },
+    // {
+    //   name: "peerlist",
+    //   url: "https://peerlist.io/code_kartik",
+    // },
     {
       name: "say hello",
-      url: "mailto:kartik.labhshetwar@gmail.com",
+      url: "mailto:keshrinandan510@gmail.com",
     },
-    {
-      name: "book a meet",
-      url: "https://cal.com/kartik-labhshetwar/15min",
-    },
+    // {
+    //   name: "book a meet",
+    //   url: "https://cal.com/kartik-labhshetwar/15min",
+    // },
   ];
 
   return (

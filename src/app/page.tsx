@@ -1,5 +1,7 @@
 'use client'
 
+import { useState, useEffect } from "react";
+import { AppleHelloEnglishEffect } from "@/components/apple-hello-effect";
 import {ModeToggle} from "@/components/theme-toggle"
 import Footer from "@/components/Footer"
 import OnekoCat from "@/components/OnekoCat"
@@ -17,7 +19,25 @@ const clashDisplay = localFont({
 
 
 export default function Home() {
+  const [showContent, setShowContent] = useState(false);
+
+  useEffect(() => {
+    // Show the main content after 2.5 seconds (adjust as needed)
+    const timer = setTimeout(() => setShowContent(true), 4000);
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (!showContent) {
+    return (
+      <div className="flex w-full h-screen flex-col justify-center items-center gap-16">
+        <AppleHelloEnglishEffect speed={.8} />
+      </div>
+    );
+  }
+
   return (
+    <>
+    
     <div className="min-h-screen">
       <OnekoCat />
       <div className="flex flex-col items-start px-6 md:px-12 lg:ml-100 pt-4 md:pt-6 space-y-8 md:space-y-12 max-w-3xl mx-auto">
@@ -34,15 +54,15 @@ export default function Home() {
           <div className="flex items-center gap-6 mb-4 border border-neutral-800 dark:border-neutral-300 p-4">
             <div className="w-20 h-20 md:w-24 md:h-24 shrink-0 relative">
               <Image
-                src="/kartik.jpg"
-                alt="Kartik Labhshetwar"
+                src="/picofme (1).png"
+                alt="Keshri  Nandan"
                 fill
                 priority
                 className="rounded-full object-cover"
               />
             </div>
             <div>
-              <h1 className={`text-2xl md:text-4xl dark:text-neutral-200 ${clashDisplay.className}`}>Kartik Labhshetwar</h1>
+              <h1 className={`text-2xl md:text-4xl dark:text-neutral-200 ${clashDisplay.className}`}>Keshri Nandan</h1>
               <div className="flex items-center gap-2 mt-2">
                 <p className="text-sm md:text-md text-neutral-600 dark:text-neutral-400">
                   engineer <span className="mx-1">• developer</span> 
@@ -62,9 +82,9 @@ export default function Home() {
               <span className="px-4 py-2 bg-neutral-100 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200 rounded-md text-sm md:text-base">
                 ai
               </span>
-              <span className="px-4 py-2 bg-neutral-100 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200 rounded-md text-sm md:text-base">
-                ui/ux
-              </span>
+              {/* <span className="px-4 py-2 bg-neutral-100 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200 rounded-md text-sm md:text-base">
+                
+              </span> */}
             </div>
             
             <a
@@ -79,16 +99,16 @@ export default function Home() {
             </a>
 
 
-            <Link href={'https://cal.com/kartik-labhshetwar/15min'} target="_blank" className={`pl-4 text-lg md:text-xl hover:underline ${clashDisplay.className}`} >
+            {/* <Link href={'https://cal.com/kartik-labhshetwar/15min'} target="_blank" className={`pl-4 text-lg md:text-xl hover:underline ${clashDisplay.className}`} >
                 book a meet
-            </Link>
+            </Link> */}
           </div>
         </div>
-
+{/* 
         <div className="w-full">
           <h2 className="text-xl md:text-2xl font-medium mb-4">Experience</h2>
           <Experience />
-        </div>
+        </div> */}
 
         <div className="w-full">
           <h2 className="text-xl md:text-2xl font-medium mb-4">Work</h2>
@@ -141,5 +161,6 @@ export default function Home() {
         </div>
       </div>
     </div>
+    </>
   );
 }

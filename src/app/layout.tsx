@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import {Inter_Tight} from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider"
+import { AppleHelloEnglishEffect } from "../components/apple-hello-effect"
 
 const inter = Inter_Tight({
   weight: '400',
@@ -10,7 +11,7 @@ const inter = Inter_Tight({
 })
 
 export const metadata: Metadata = {
-  title: 'Kartik Labhshetwar',
+  title: 'Keshri Nandan',
   description: 'I build products that solve real problems. Available for new opportunities.',
   openGraph: {
     url: 'https://kartik017.vercel.app/',
@@ -18,10 +19,10 @@ export const metadata: Metadata = {
     locale: 'en_US',
     type: 'website',
     images: [{
-      url: '/open-graph.png',
+      url: '/picofme (1).png',
       width: 1200,
       height: 630,
-      alt: 'Kartik Labhshetwar - Portfolio'
+      alt: 'Keshri Nandan - Portfolio'
     }],
   },
 };
@@ -42,6 +43,7 @@ export default function RootLayout({
         >
           <div className="relative z-10">
             {children}
+          
           </div>
         </ThemeProvider>
         <script

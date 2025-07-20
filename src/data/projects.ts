@@ -2,52 +2,79 @@ import { Project } from '@/types/project'
 
 export const projects: Project[] = [
   {
-    id: 'mind-mentor',
-    title: "Mind Mentor AI",
-    description: "Mind Mentor AI revolutionizes educational assistance through advanced AI technology. This innovative platform harnesses the power of Groq AI and large language models to provide personalized learning experiences, intelligent study plan generation, and dynamic resource curation. Built with modern web technologies, it offers an intuitive interface for seamless interaction with AI-powered educational tools, making learning more efficient and engaging.",
-    liveLink: "https://mind-mentor-pearl.vercel.app/",
-    githubLink: "https://github.com/KartikLabhshetwar/mind-mentor",
-    video:'/videos/mind-mentor.mp4',
-    image: '/images/mindmentorai.png',
-    tweetUrl: "https://x.com/code_kartik/status/1887125453359788069",
+    id: 'imaginary',
+    title: "Imaginfy AI",
+    description: `
+  Imaginary is an AI-powered web application that provides a suite of intelligent tools for advanced image manipulation. It empowers users to effortlessly perform complex editing tasks such as:\n
+   * Image Restoration: Repairing and enhancing old or damaged photos.\n   * Generative Fill: Expanding images or adding new elements with AI.\n   * Object Removal: Seamlessly deleting unwanted objects or imperfections.\n   * Object Recolor: Changing the color of specific items within an image.\n   * Background Removal: Isolating subjects by removing the background.\n`,
+  liveLink: "https://imaginary-woad.vercel.app/",
+    githubLink: "https://github.com/keshrinandan99/Imaginary",
+    // video:'/videos/mind-mentor.mp4',
+    image: '/images/imaginary.png',
+   
     tags: [
       "Next.js",
+      "Clerk",
+      "Cloudinary AI",
       "Tailwind CSS",
-      "Groq AI",
       "TypeScript",
       "shadcn/ui",
-      "Express",
-      "Node.js"
     ],
   },
   {
-    id: 'satya-check',
-    title: "SatyaCheck",
-    description: "SatyaCheck is an innovative fact-checking platform that combines cutting-edge AI technology with browser integration to combat misinformation. Leveraging Google's Gemini Pro AI, it analyzes news articles and social media content in real-time, providing users with credibility assessments and source verification. The Chrome extension seamlessly integrates with users' browsing experience, offering instant fact-checking capabilities while maintaining a clean and intuitive interface.",
-    liveLink: "https://satya-check.vercel.app/",
-    githubLink: "https://github.com/21prnv/SatyaCheck",
-    video: "/videos/satya-check.mp4",
-    image: '/images/satyacheck.png',
-    tweetUrl: "https://x.com/code_kartik/status/1901635520838639710",
+    id: 'cine-match',
+    title: "CineMatch-Recommendation System",
+    description: `
+
+
+Built a movie recommendation app that suggests films based on what you like using machine learning and data from 5,000+ movies. Used Python to clean and process all the movie data, then applied NLP techniques to understand movie similarities. Created a simple web app with Streamlit where users can get instant movie recommendations in under half a second. The whole project covers everything from data handling to building a working app that actually helps people find their next favorite movie. Great example of turning raw data into something useful and user-friendly.
+`,
+  
+    githubLink: "https://github.com/keshrinandan99/Movie-Recommender-System",
+     video:'/videos/movierecommender.mp4',
+    image: '/images/imaginary.png',
+   
     tags: [
-      "Next.js",
-      "Tailwind CSS",
-      "Google Gemini Pro AI",
-      "Chrome extension",
-      "TypeScript",
-      "shadcn/ui",
-      "Supabase"
+      "Python",
+      "NLP",
+      "StreamLit",
+      "Sci-kit",
+    
     ],
   },
   {
-    id: 'donezo',
-    title: "Donezo",
-    description: "Donezo transforms the way professionals track and reflect on their work through AI-powered weekly review emails. Drawing inspiration from the communication styles of tech visionaries like Elon Musk and Steve Jobs, it generates personalized, insightful summaries of your achievements and progress. The application combines modern front-end design with robust backend scheduling to deliver timely, engaging content that helps users maintain perspective on their professional journey.",
+    id: 'location Tracker',
+    title: "TrackSync - Location Tracker",
+    description: `
+
+
+A real-time device tracking app that shows where devices are on a map instantly. Built with Node.js and Express.js on the backend, using Socket.IO to keep everything connected and updating in real-time between the app and users.
+`,
+  
+    githubLink: "https://github.com/keshrinandan99/Imaginary",
+     video:'/videos/movierecommender.mp4',
+    image: '/images/imaginary.png',
+   
+    tags: [
+      "Python",
+      "NLP",
+      "StreamLit",
+      "Sci-kit",
+    
+    ],
+  },
+
+  {
+    id: 'location Tracker',
+    title: "TrackSync - Location Tracker",
+    description: `A live device tracking system utilizing WebSockets for instant location updates.
+• Engineered a real-time location tracking system using Node.js, Express.js, and Socket.IO for bidirectional communication.
+• Integrated Leaflet.js and OpenStreetMap to display live device locations on an interactive map interface.
+• Developed client-side geolocation capabilities to send real-time latitude and longitude data to the server via WebSockets.`,
     liveLink: "https://donezo-theta.vercel.app/",
     githubLink: "https://github.com/UmangAgarwal257/Donezo",
     video: "/videos/donezo.mp4",
     image: '/images/donezo.png',
-    tweetUrl: "https://x.com/code_kartik/status/1900964947087253538",
     tags: [
       "Next.js",
       "Tailwind CSS",
@@ -59,6 +86,23 @@ export const projects: Project[] = [
       "Node Cron"
     ],
   },
+  {
+    id: 'NikeX Landing',
+    title: "Nike UI Clone",
+    description: "A Nike UI clone made with Tailwind CSS is a visually modern web project that replicates the core design and layout of the Nike website. It employs Tailwind's utility-first CSS classes for fast and consistent styling, resulting in a clean interface and responsive design.",
+    liveLink: "https://satya-check.vercel.app/",
+    githubLink: "https://github.com/21prnv/SatyaCheck",
+    video: "/videos/satya-check.mp4",
+    image: '/images/satyacheck.png',
+    tweetUrl: "https://x.com/code_kartik/status/1901635520838639710",
+    tags: [
+      "React",
+      "Tailwind CSS",
+      "JS",
+      "Vercel",
+    ],
+  },
+  
   {
     id: 'learnx',
     title: "LearnX",
