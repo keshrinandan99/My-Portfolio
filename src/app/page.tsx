@@ -23,9 +23,17 @@ export default function Home() {
   const [showContent, setShowContent] = useState(false);
 
   useEffect(() => {
-    // Show the main content after 2.5 seconds (adjust as needed)
-    const timer = setTimeout(() => setShowContent(true), 4000);
-    return () => clearTimeout(timer);
+    // Check if splash has already been shown in this session
+    const splashShown = sessionStorage.getItem('splashShown');
+    if (splashShown) {
+      setShowContent(true);
+    } else {
+      const timer = setTimeout(() => {
+        setShowContent(true);
+        sessionStorage.setItem('splashShown', 'true');
+      }, 4000);
+      return () => clearTimeout(timer);
+    }
   }, []);
 
   if (!showContent) {
@@ -84,7 +92,7 @@ export default function Home() {
                 full-stack
               </span>
               <span className="px-4 py-2 bg-neutral-100 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200 rounded-md text-sm md:text-base">
-                ai
+                ai/ml
               </span>
               {/* <span className="px-4 py-2 bg-neutral-100 dark:bg-neutral-800 text-neutral-800 dark:text-neutral-200 rounded-md text-sm md:text-base">
                 
@@ -92,7 +100,7 @@ export default function Home() {
             </div>
             
             <a
-              href="https://drive.google.com/file/d/16GJ9oWGZaaN1mtxXErQJsQhqjk3quXh3/view?usp=sharing"
+              href="https://drive.google.com/file/d/1VuyG4vcU8d0v6zZp5aE8MPhyb6P9uvjU/view?usp=drive_link"
               className="inline-flex items-center justify-center px-3 py-2 bg-neutral-100 dark:bg-neutral-800/30 text-neutral-800 dark:text-neutral-200 rounded-md border border-neutral-300 dark:border-neutral-700 hover:bg-neutral-200 dark:hover:bg-neutral-700/50 transition-colors font-medium"
               target="_blank"
               rel="noopener noreferrer"

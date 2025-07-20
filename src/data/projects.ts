@@ -42,59 +42,16 @@ Built a movie recommendation app that suggests films based on what you like usin
     
     ],
   },
+ 
   {
-    id: 'location Tracker',
-    title: "TrackSync - Location Tracker",
-    description: `
-
-
-A real-time device tracking app that shows where devices are on a map instantly. Built with Node.js and Express.js on the backend, using Socket.IO to keep everything connected and updating in real-time between the app and users.
-`,
-  
-    githubLink: "https://github.com/keshrinandan99/Imaginary",
-     video:'/videos/movierecommender.mp4',
-    image: '/images/imaginary.png',
-   
-    tags: [
-      "Python",
-      "NLP",
-      "StreamLit",
-      "Sci-kit",
-    
-    ],
-  },
-
-  {
-    id: 'location Tracker',
-    title: "TrackSync - Location Tracker",
-    description: `A live device tracking system utilizing WebSockets for instant location updates.
-• Engineered a real-time location tracking system using Node.js, Express.js, and Socket.IO for bidirectional communication.
-• Integrated Leaflet.js and OpenStreetMap to display live device locations on an interactive map interface.
-• Developed client-side geolocation capabilities to send real-time latitude and longitude data to the server via WebSockets.`,
-    liveLink: "https://donezo-theta.vercel.app/",
-    githubLink: "https://github.com/UmangAgarwal257/Donezo",
-    video: "/videos/donezo.mp4",
-    image: '/images/donezo.png',
-    tags: [
-      "Next.js",
-      "Tailwind CSS",
-      "Express.js",
-      "Node.js",
-      "TypeScript",
-      "Aceternity UI",
-      "Resend",
-      "Node Cron"
-    ],
-  },
-  {
-    id: 'NikeX Landing',
-    title: "Nike UI Clone",
+    id: 'Nike-Landing',
+    title: "Nike-Landing Page",
     description: "A Nike UI clone made with Tailwind CSS is a visually modern web project that replicates the core design and layout of the Nike website. It employs Tailwind's utility-first CSS classes for fast and consistent styling, resulting in a clean interface and responsive design.",
-    liveLink: "https://satya-check.vercel.app/",
-    githubLink: "https://github.com/21prnv/SatyaCheck",
-    video: "/videos/satya-check.mp4",
+    liveLink: "https://landing-page-roan-eta.vercel.app/",
+    githubLink: "https://github.com/keshrinandan99/Landing-page",
+    video: "/videos/nike-landing.mp4",
     image: '/images/satyacheck.png',
-    tweetUrl: "https://x.com/code_kartik/status/1901635520838639710",
+   
     tags: [
       "React",
       "Tailwind CSS",
@@ -102,34 +59,54 @@ A real-time device tracking app that shows where devices are on a map instantly.
       "Vercel",
     ],
   },
-  
   {
-    id: 'learnx',
-    title: "LearnX",
-    description: "LearnX is a comprehensive course marketplace platform that seamlessly connects educators with learners. Built on the MERN stack with TypeScript, it features secure user authentication, streamlined course management, and integrated payment processing through Razorpay. The platform emphasizes user experience with intuitive navigation, responsive design, and robust content delivery, making online education accessible and engaging.",
-    liveLink: "https://learnx-frontend.onrender.com/",
-    githubLink: "https://github.com/KartikLabhshetwar/LearnX",
-    image: '/images/learnx.png',
-    tweetUrl: "https://x.com/code_kartik/status/1832882108316176563",
-    tags: [
-      "MERN",
-      "Zod",
-      "JWT",
-      "TypeScript",
-      "bcryptjs",
-      "Tailwind CSS",
-      "Razorpay API"
+    id: 'tracksync',
+    title: "TrackSync - Location Tracker",
+    description: "A real-time device tracking system leveraging WebSocket technology for instant location updates and live monitoring capabilities. Built with Node.js, Express.js, and Socket.IO to enable bidirectional communication between clients and server for seamless real-time data transmission. Features an interactive map interface powered by Leaflet.js and OpenStreetMap that displays live device locations with continuous updates. Implements client-side geolocation capabilities using the Geolocation API to capture and transmit precise latitude and longitude coordinates via WebSockets. The system provides instant location synchronization, enabling real-time tracking and monitoring of multiple devices simultaneously with minimal latency.",
+    // liveLink: "https://learnx-frontend.onrender.com/",
+    githubLink: "https://github.com/keshrinandan99/TrackSync-Location-Tracker",
+    // image: '/images/learnx.png',
+    video:'/videos/tracksync.mp4',
+ 
+    tags: [ 
+
+      "Node.js",
+      "Express.js",
+      "Socket.IO",
+      "Geolocation API",
+  
     ],
   },
+  
   {
-    id: 'taskmaster',
-    title: "TaskMaster",
-    description: "TaskMaster redefines task management with its dynamic Kanban board implementation and detailed list views. This full-stack application combines the flexibility of Next.js with the reliability of MongoDB to deliver a seamless task organization experience. Features include real-time updates, drag-and-drop functionality, and customizable workflows, all wrapped in an elegant, responsive interface that prioritizes productivity and user experience.",
-    liveLink: "https://task-management-dashboard-zeta.vercel.app/",
-    githubLink: "https://github.com/KartikLabhshetwar/task-management-dashboard",
-    image:'/images/taskmaster.png',
+    id: 'playpulse',
+    title: "PlayPulse - Media Streaming Platform",
+    description: "A scalable backend solution for video streaming platforms built with Node.js, Express.js, and MongoDB following RESTful API principles. Features secure JWT-based authentication with Bcrypt encryption and optimized MongoDB schemas for efficient data handling. Integrated Multer for seamless file uploads and Cloudinary for reliable cloud-based video and thumbnail storage. The system provides robust user authentication, access control, and media management capabilities. Designed with modern web technologies to ensure scalability, security, and efficient handling of video content and user interactions.",
+    // liveLink: "https://learnx-frontend.onrender.com/",
+    githubLink: "https://github.com/keshrinandan99/-PlayPulse---Media-Streaming-Platform-Backend-",
+    // image: '/images/learnx.png',
+ 
+    tags: [
+      "Node.js",
+      "Express.js",
+      "JWT",
+      "Bcrypt",
+      "Multer",
+      "Cloudinary",
+      " RESTful APIs"
+    ],
+  },
+  
+  {
+    id: 'taskmanager',
+    title: "TaskManager",
+    description: "A comprehensive team task management system featuring separate admin and user dashboards for efficient task coordination within teams. The platform provides administrators with powerful oversight tools for task assignment, delegation, and team management, while users have access to an intuitive interface for task completion and progress tracking. Includes integrated todo functionality and complete CRUD operations for comprehensive task lifecycle management. The dual-dashboard architecture ensures role-based access and optimized workflows for different user types. Designed to streamline team collaboration, enhance productivity, and provide centralized visibility into project progress and task distribution across team members.",
+
+    // liveLink: "https://task-management-dashboard-zeta.vercel.app/",
+    githubLink: "https://github.com/keshrinandan99/Task-Management/tree/main",
+    image:'/images/taskManager.png',
     // tweetUrl: "https://x.com/code_kartik/status/1887125453359788069",
-    tags: ["Next.js", "Node.js", "Express.js", "MongoDB", "Tailwind CSS"],
+    tags: ["React", "Node.js", "Express.js", "MongoDB", "SchadCN"],
   },
 ];
 
