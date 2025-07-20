@@ -12,6 +12,8 @@ import Image from "next/image"
 import { projects } from '@/data/projects'
 import { ProjectCard } from '@/components/ProjectCard'
 import localFont from 'next/font/local'
+import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
+import { SpringElement } from "@/components/ui/spring-element";
 
 const clashDisplay = localFont({ 
   src: '../fonts/ClashDisplay-Semibold.woff2',
@@ -52,15 +54,18 @@ export default function Home() {
         </div>
         <div>
           <div className="flex items-center gap-6 mb-4 border border-neutral-800 dark:border-neutral-300 p-4">
-            <div className="w-20 h-20 md:w-24 md:h-24 shrink-0 relative">
-              <Image
-                src="/picofme (1).png"
-                alt="Keshri  Nandan"
-                fill
-                priority
-                className="rounded-full object-cover"
-              />
-            </div>
+            {/* Replaced <Image> with SpringElement + Avatar */}
+            <SpringElement>
+              <Avatar className="w-20 h-20 md:w-24 md:h-24">
+                <AvatarImage
+                  draggable={false}
+                  src="/picofme (1).png"
+                  alt="Keshri Nandan"
+                  className="rounded-full object-cover"
+                />
+                <AvatarFallback>KN</AvatarFallback>
+              </Avatar>
+            </SpringElement>
             <div>
               <h1 className={`text-2xl md:text-4xl dark:text-neutral-200 ${clashDisplay.className}`}>Keshri Nandan</h1>
               <div className="flex items-center gap-2 mt-2">

@@ -11,6 +11,7 @@ const inter = Inter_Tight({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://keshri-nandan-portfolio.vercel.app/'),
   title: 'Keshri Nandan',
   description: 'I build products that solve real problems. Available for new opportunities.',
   openGraph: {
