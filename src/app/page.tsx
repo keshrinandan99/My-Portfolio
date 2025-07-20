@@ -6,7 +6,7 @@ import {ModeToggle} from "@/components/theme-toggle"
 import Footer from "@/components/Footer"
 import OnekoCat from "@/components/OnekoCat"
 import Reach from "@/components/Reach"
-import Experience from "@/components/Experience"
+
 import Link from "next/link"
 import Image from "next/image"
 import { projects } from '@/data/projects'

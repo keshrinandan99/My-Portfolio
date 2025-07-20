@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import {Inter_Tight} from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider"
-import { AppleHelloEnglishEffect } from "../components/apple-hello-effect"
+
 
 const inter = Inter_Tight({
   weight: '400',
