@@ -79,12 +79,8 @@ const generateSpringPath = (
   }
   return path.join(' ');
 };
-interface MotionValue<T = any> {
-  get(): T;
-  on(event: 'change', callback: () => void): () => void;
-}
 
-function useMotionValueValue<T>(mv: MotionValue<T>): T {
+function useMotionValueValue(mv: any) {
   return React.useSyncExternalStore(
     (callback) => {
       const unsub = mv.on('change', callback);
@@ -94,6 +90,7 @@ function useMotionValueValue<T>(mv: MotionValue<T>): T {
     () => mv.get(),
   );
 }
+
 type SpringElementProps = {
   children: React.ReactElement;
   className?: string;
