@@ -6,6 +6,7 @@ import {
   motion,
   useMotionValue,
   useSpring,
+  MotionValue,
 } from 'framer-motion';
 import { cn } from '@/lib/utils';
 
@@ -80,7 +81,7 @@ const generateSpringPath = (
   return path.join(' ');
 };
 
-function useMotionValueValue(mv: any) {
+function useMotionValueValue<T>(mv: MotionValue<T>) {
   return React.useSyncExternalStore(
     (callback) => {
       const unsub = mv.on('change', callback);
